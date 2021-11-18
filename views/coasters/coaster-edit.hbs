@@ -1,0 +1,44 @@
+<h1>Editar Lugar </h1>
+
+<form action="/coasters/{{coaster._id}}" method="POST">
+    <label for="name">
+        Name
+        <input value="{{coaster.name}}" name="name" id="name" type="text">
+    </label>
+
+    </br>
+
+    <label for="description">
+        Description
+        <input value="{{coaster.description}}" name="description" id="description" type="text">
+    </label>
+
+    </br>
+
+    <label for="inversions">
+        Inversions
+        <input value="{{coaster.inverions}}" name="inversions" id="inversions" type="text">
+    </label>
+
+    </br>
+
+    <label for="length">
+        Length
+        <input value="{{coaster.length}}" name="length" id="length" type="text">
+    </label>
+    </br>
+
+    {{!-- <label for="">
+        Nombre del parque <input value="{{coaster.park_id._id}}" name="park_id" id="park_id" type="text">
+    </label>
+
+    </br>
+
+    <label for="">
+        Descripción <input value="{{coaster.park_id.description}}" id="park_id" type="text">
+    </label>
+    </br> --}}
+
+    </br>
+    <button type="submit">Editar lugar</button>
+</form>
